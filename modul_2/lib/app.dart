@@ -13,6 +13,7 @@
 // limitations under the License.
 
 import 'package:flutter/material.dart';
+import 'package:shrine/register.dart';
 
 import 'home.dart';
 import 'login.dart';
@@ -27,6 +28,7 @@ class ShrineApp extends StatelessWidget {
       title: 'Shrine',
       initialRoute: '/login',
       routes: {
+        '/register': (BuildContext context) => const RegisterPage(),
         '/login': (BuildContext context) => const LoginPage(),
         // TODO: Change to a Backdrop with a HomePage frontLayer (104)
         '/': (BuildContext context) => const HomePage(),
